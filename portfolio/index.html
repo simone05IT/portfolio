@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="it" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simone | Portfolio</title>
+  
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    /* Personalizzazioni CSS per un look moderno */
+    .hero-section {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      background: radial-gradient(circle at top right, rgba(13, 110, 253, 0.15), transparent 50%);
+    }
+    .card-project {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .card-project:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+    .badge-tech {
+      font-size: 0.8rem;
+      padding: 0.4em 0.8em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar Responsive -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom border-secondary-subtle">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Simone<span class="text-primary">.dev</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#chi-sono">Chi sono</a></li>
+          <li class="nav-item"><a class="nav-link" href="#progetti">Progetti</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Competenze</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contatti">Contatti</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="chi-sono">
+    <div class="container" data-aos="fade-up">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <span class="badge bg-primary-subtle text-primary border border-primary-subtle mb-3">Sviluppatore Web</span>
+          <h1 class="display-3 fw-bold mb-3">Ciao, sono <span class="text-primary">Simone</span>.</h1>
+          <p class="lead text-body-secondary mb-4">
+            Realizzo applicazioni e interfacce web moderne, veloci e completamente responsive.
+          </p>
+          <div class="d-flex gap-3">
+            <a href="#progetti" class="btn btn-primary btn-lg">Vedi i progetti</a>
+            <a href="#contatti" class="btn btn-outline-secondary btn-lg">Contattami</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Progetti -->
+  <section class="py-5 bg-body-tertiary" id="progetti">
+    <div class="container py-4">
+      <h2 class="fw-bold mb-4" data-aos="fade-up">Progetti in Evidenza</h2>
+      <div class="row g-4">
+        
+        <!-- Card Progetto 1 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 card-project bg-dark text-white">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Nome Progetto 1</h5>
+              <p class="card-text text-body-secondary flex-grow-1">Descrizione sintetica del progetto, delle funzionalità principali e del problema risolto.</p>
+              <div class="mb-3">
+                <span class="badge bg-secondary badge-tech">HTML5</span>
+                <span class="badge bg-secondary badge-tech">Bootstrap 5</span>
+                <span class="badge bg-secondary badge-tech">JavaScript</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="#" class="btn btn-sm btn-outline-light"><i class="bi bi-github me-1"></i> Codice</a>
+                <a href="#" class="btn btn-sm btn-primary"><i class="bi bi-box-arrow-up-right me-1"></i> Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card Progetto 2 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 card-project bg-dark text-white">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Nome Progetto 2</h5>
+              <p class="card-text text-body-secondary flex-grow-1">Applicazione web o strumento sviluppato per ottimizzare un processo o mostrare specifiche competenze.</p>
+              <div class="mb-3">
+                <span class="badge bg-secondary badge-tech">CSS3</span>
+                <span class="badge bg-secondary badge-tech">API Rest</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="#" class="btn btn-sm btn-outline-light"><i class="bi bi-github me-1"></i> Codice</a>
+                <a href="#" class="btn btn-sm btn-primary"><i class="bi bi-box-arrow-up-right me-1"></i> Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Competenze / Skills -->
+  <section class="py-5" id="skills">
+    <div class="container py-4" data-aos="fade-up">
+      <h2 class="fw-bold mb-4">Competenze Tecniche</h2>
+      <div class="row g-3">
+        <div class="col-6 col-md-3">
+          <div class="p-3 border rounded text-center bg-body-tertiary">
+            <i class="bi bi-filetype-html display-6 text-danger mb-2"></i>
+            <h6>HTML5</h6>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="p-3 border rounded text-center bg-body-tertiary">
+            <i class="bi bi-filetype-css display-6 text-primary mb-2"></i>
+            <h6>CSS3 / Bootstrap</h6>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="p-3 border rounded text-center bg-body-tertiary">
+            <i class="bi bi-filetype-js display-6 text-warning mb-2"></i>
+            <h6>JavaScript (ES6+)</h6>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="p-3 border rounded text-center bg-body-tertiary">
+            <i class="bi bi-git display-6 text-danger mb-2"></i>
+            <h6>Git / GitHub</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer / Contatti -->
+  <footer class="py-4 bg-dark border-top border-secondary-subtle" id="contatti">
+    <div class="container text-center">
+      <div class="mb-3">
+        <a href="https://github.com/simone05it" target="_blank" class="text-white me-3 fs-4"><i class="bi bi-github"></i></a>
+        <a href="#" class="text-white me-3 fs-4"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:email@esempio.com" class="text-white fs-4"><i class="bi bi-envelope"></i></a>
+      </div>
+      <p class="text-body-secondary mb-0">&copy; Simone - Sviluppato con HTML, CSS e Bootstrap.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Inizializza le animazioni scroll
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+</body>
+</html>
